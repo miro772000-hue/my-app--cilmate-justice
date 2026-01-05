@@ -531,14 +531,14 @@
         // ==========================================
         class GeminiService {
           constructor() {
-            this.modelName = 'gemini-pro';
+            this.modelName = 'gemini-1.5-flash';
             this.ai = null;
             this.initialize();
           }
 
           initialize() {
             const env = window.process?.env || {};
-            const apiKey = env.GOOGLE_MAPS_API_KEY || env.API_KEY;
+            const apiKey = "AIzaSyBw9oRL5B1rCUU2w24Nq75KeyKMsAeteLY";
             
             // Only initialize if key is present and not the placeholder
             if (apiKey && apiKey !== "PLACEHOLDER_FOR_VERCEL_ENV") {
